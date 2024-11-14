@@ -48,6 +48,7 @@
   
   height: 270px;
   width: 460px;
+  padding: 32px;
 }
 
 .container h1 {
@@ -92,4 +93,10 @@
 .container .btns .decrease {
   color: var(--decrease-button-color);
   border: 1px solid var(--decrease-button-color);
+}
+
+@media (max-width: 640px) {
+  .container .btns {
+    flex-direction: column;
+  }
 }
